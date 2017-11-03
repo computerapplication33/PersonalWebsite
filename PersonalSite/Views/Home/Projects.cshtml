@@ -1,0 +1,46 @@
+﻿
+ 
+
+
+
+
+<article class="athelas">
+    <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(https://images.unsplash.com/photo-1504890231393-71b0d15a05f4?auto=format&fit=crop&w=700&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D)  no-repeat center;">
+        <div class="dtc">
+            <header class="white">
+                <h1 class="f1 f-headline-l fw1 i white">My Projects</h1>
+            </header>
+            <div class="white ph7 f2 lh-copy center">
+               @foreach (KeyValuePair<string, int> kvp in ViewBag.Repos)
+               {
+                <h3>Project name: <strong>@kvp.Key</strong> (@kvp.Value Stars) </h3>
+
+               }
+
+                <br />
+                <br />
+                <br />
+                <br />
+
+            <h3 class="f4 fw1 lh-title">Click to go back home</h3>
+                </div>
+
+            <a href="@Url.Action("Index")">
+                <i class="fa fa-arrow-down fa-5x grow lh-title" aria-hidden="true"></i>
+            </a>
+            <br>
+            <br>
+            <br>
+
+
+
+
+        </div>
+    </div>
+    
+        </article>
+
+
+
+
+
