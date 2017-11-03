@@ -27,7 +27,7 @@ namespace PersonalSite.Controllers
         public async  Task<ActionResult> Projects()
         {
             var client = new GitHubClient(new ProductHeaderValue("my-cool-app"));
-            client.Credentials = new Credentials("411285ddbf8d8b4afc075ef014317e8ab5bc4a89");
+            client.Credentials = new Credentials("token-here");
 
             var repos = await client.Repository.GetAllForUser("sonofakel");
             var starsDict = new Dictionary<string, int> { };
